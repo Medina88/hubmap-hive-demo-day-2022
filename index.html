@@ -1,0 +1,1210 @@
+
+
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+	
+	<!-- Title of the subclass will replace this default title if given -->
+	<title>Cyberinfrastructure for Network Science (CNS) Center at Indiana University</title>
+	
+	<!-- Head content of the subclass will be pasted here -->
+	
+
+
+<!-- use 'require' tag to include CSS and js specified for the page -->
+<meta name="layout" content="CNSTemplate"/>
+
+<link href="/images/global/favicon.ico" rel="shortcut icon">
+<link type="text/css" rel="stylesheet" href="https://cns.iu.edu/css/CNS_Global.css">
+<link href="//fonts.googleapis.com/css?family=Open+Sans:400italic,600italic,400,600" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" />
+  <link rel="icon" href="images/global/cropped-Favicon-Color-32x32.png" sizes="32x32" />
+  <link rel="icon" href="images/global/cropped-Favicon-Color-192x192.png" sizes="192x192" />
+  <link rel="apple-touch-icon-precomposed" href="img/cropped-Favicon-Color-180x180.png" />
+  <meta name="msapplication-TileImage" content="img/cropped-Favicon-Color-270x270.png" />
+  
+  <!--twitter tags--><meta content="https://cns-iu.github.io/workshops/2020-09-21_hubmap_hive_demo_day/images/global/ccfws-hero.jpg" name="twitter:image:src"/><meta content="HuBMAP Y3:Q1 Demo Day" name="twitter:title"/><meta content="HuBMAP Y3:Q1 Demo Day" name="twitter:description"/><meta content="@katycns" name="twitter:site"/><meta content="@katycns" name="twitter:creator"/><meta content="summary_large_image" name="twitter:card"/><!--end twitter tags-->
+
+  <!--facebook tags-->
+  <meta property="og:url" content="https://cns-iu.github.io/workshops/2020-09-21_hubmap_hive_demo_day/" />
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="HUBMAP Y3:Q1 DEMO DAY" />
+  <meta property="og:description" content="HUBMAP Y3:Q1 DEMO DAY" />
+  <meta property="og:image" content="https://cns-iu.github.io/workshops/2020-09-21_hubmap_hive_demo_day/images/global/ccfws-hero.jpg" />
+
+	
+	<!-- jQuery and CSS_Global latest core library -->
+	
+	<!-- Load needed resources such as JS, CSS, etc -->
+<style type="text/css">
+    /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+
+    html {
+      line-height: 1.15;
+      /* 1 */
+      -webkit-text-size-adjust: 100%;
+      /* 2 */
+    }
+
+    body {
+      margin: 0;
+    }
+
+    main {
+      display: block;
+    }
+
+    h1 {
+      font-size: 2em;
+      margin: 0.67em 0;
+    }
+
+    hr {
+      box-sizing: content-box;
+      /* 1 */
+      height: 0;
+      /* 1 */
+      overflow: visible;
+      /* 2 */
+    }
+
+    pre {
+      font-family: monospace, monospace;
+      /* 1 */
+      font-size: 1em;
+      /* 2 */
+    }
+
+    a {
+      background-color: transparent;
+    }
+
+    abbr[title] {
+      border-bottom: none;
+      /* 1 */
+      text-decoration: underline;
+      /* 2 */
+      text-decoration: underline dotted;
+      /* 2 */
+    }
+
+    b,
+    strong {
+      font-weight: bolder;
+    }
+
+    code,
+    kbd,
+    samp {
+      font-family: monospace, monospace;
+      /* 1 */
+      font-size: 1em;
+      /* 2 */
+    }
+
+    small {
+      font-size: 80%;
+    }
+
+    sub,
+    sup {
+      font-size: 75%;
+      line-height: 0;
+      position: relative;
+      vertical-align: baseline;
+    }
+
+    sub {
+      bottom: -0.25em;
+    }
+
+    sup {
+      top: -0.5em;
+    }
+
+    img {
+      border-style: none;
+    }
+
+    button,
+    input,
+    optgroup,
+    select,
+    textarea {
+      font-family: inherit;
+      /* 1 */
+      font-size: 100%;
+      /* 1 */
+      line-height: 1.15;
+      /* 1 */
+      margin: 0;
+      /* 2 */
+    }
+
+    button,
+    input {
+      /* 1 */
+      overflow: visible;
+    }
+
+    button,
+    select {
+      /* 1 */
+      text-transform: none;
+    }
+
+    button,
+    [type="button"],
+    [type="reset"],
+    [type="submit"] {
+      -webkit-appearance: button;
+    }
+
+    button::-moz-focus-inner,
+    [type="button"]::-moz-focus-inner,
+    [type="reset"]::-moz-focus-inner,
+    [type="submit"]::-moz-focus-inner {
+      border-style: none;
+      padding: 0;
+    }
+
+    button:-moz-focusring,
+    [type="button"]:-moz-focusring,
+    [type="reset"]:-moz-focusring,
+    [type="submit"]:-moz-focusring {
+      outline: 1px dotted ButtonText;
+    }
+
+    fieldset {
+      padding: 0.35em 0.75em 0.625em;
+    }
+
+    legend {
+      box-sizing: border-box;
+      /* 1 */
+      color: inherit;
+      /* 2 */
+      display: table;
+      /* 1 */
+      max-width: 100%;
+      /* 1 */
+      padding: 0;
+      /* 3 */
+      white-space: normal;
+      /* 1 */
+    }
+
+    progress {
+      vertical-align: baseline;
+    }
+
+    textarea {
+      overflow: auto;
+    }
+
+    [type="checkbox"],
+    [type="radio"] {
+      box-sizing: border-box;
+      /* 1 */
+      padding: 0;
+      /* 2 */
+    }
+
+    [type="number"]::-webkit-inner-spin-button,
+    [type="number"]::-webkit-outer-spin-button {
+      height: auto;
+    }
+
+    [type="search"] {
+      -webkit-appearance: textfield;
+      /* 1 */
+      outline-offset: -2px;
+      /* 2 */
+    }
+
+    [type="search"]::-webkit-search-decoration {
+      -webkit-appearance: none;
+    }
+
+    ::-webkit-file-upload-button {
+      -webkit-appearance: button;
+      /* 1 */
+      font: inherit;
+      /* 2 */
+    }
+
+    details {
+      display: block;
+    }
+
+    summary {
+      display: list-item;
+    }
+
+    template {
+      display: none;
+    }
+
+    [hidden] {
+      display: none;
+    }
+
+
+    /* --------------------------------------------------- */
+    * {
+      box-sizing: border-box;
+    }
+
+    html,
+    body {
+      margin: 0;
+      padding: 0;
+      line-height: 1.25em;
+    }
+
+    main {
+      margin: 0 auto;
+      padding: 0 20px 20px 20px;
+      width: 100%;
+      max-width: 1920px;
+      color: rgb(133, 125, 120);
+      transition: padding-left 0.5s;
+    }
+
+    section {
+      padding-top: 1rem;
+    }
+
+    h2 {
+      border-bottom: 1px solid rgba(133, 125, 120, 0.25);
+      padding-bottom: 0.75em;
+    }
+
+    h3 {
+      font-size: 1.125rem;
+    }
+
+    ul {
+      padding-left: 0;
+    }
+
+    a {
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+
+    main a,
+    main a:link {
+      font-weight: 700;
+      color: #213ddb;
+      transition: color 0.3s;
+    }
+
+    .logo a {
+      color: rgb(255, 255, 255);
+      transition: color 0.3s;
+    }
+
+    .main-header a:hover,
+    main a:hover {
+      color: #66a1c1;
+    }
+
+    .style-list-none {
+      list-style-type: none;
+    }
+
+    .style-list-bullet {
+      list-style-type: disc;
+      padding-left: 2rem;
+    }
+
+    .m-a-0 {
+      margin: 0;
+    }
+
+    .m-b-3 {
+      margin-bottom: 3rem;
+    }
+
+    .m-a-1 {
+      margin: 1rem;
+    }
+
+    .p-t-2 {
+      margin-top: 2rem;
+    }
+
+    .p-t-3 {
+      margin-top: 3rem;
+    }
+
+    .p-a-0 {
+      padding: 0;
+    }
+
+    .p-l-1 {
+      padding-left: 1rem;
+    }
+    .wrapper {
+      position: relative;
+    }
+
+    .primary-fill-color {
+      fill: rgb(169, 5, 51);
+    }
+
+    .main-header {
+      position: fixed;
+      width: 100%;
+    }
+
+    .main-header,
+    .main-footer {
+      /*padding-top: 0.625rem;
+        padding-bottom: 0.625rem;*/
+      padding-left: 20px;
+      padding-right: 20px;
+      background-color: #000007;
+      color: rgb(237, 235, 235);
+      transition: padding-left 0.5s;
+    }
+
+    .main-header .logo {
+      display: inline-block;
+      padding-top: 0.625rem;
+      padding-bottom: 0.625rem;
+      font-weight: 700;
+      text-transform: uppercase;
+    }
+
+    .main-header nav {
+      float: right;
+    }
+
+    .main-header nav li a {
+      display: inline-block;
+      padding-left: 0.625rem;
+      padding-right: 0.625rem;
+      padding-top: 0.625rem;
+      padding-bottom: 0.625rem;
+      font-weight: 300;
+      text-transform: uppercase;
+      color: rgb(237, 235, 235);
+    }
+
+    .agenda-list {
+      margin-bottom: 0;
+    }
+
+    .agenda-list .row {
+      padding-top: 0.5rem;
+      padding-bottom: 0.5rem;
+    }
+
+    .agenda-list span {
+      display: inline-block;
+      vertical-align: top;
+    }
+
+    .agenda-list .col-1 {
+      padding-right: 2.25rem;
+      width: 5%;
+      min-width: 7rem;
+      text-align: left;
+    }
+
+    .agenda-list .col-2 {
+      width: 70%;
+    }
+
+    main .btn,
+    main .btn:link {
+      display: inline-block;
+      border-width: 1px;
+      border-style: solid;
+      border-color: #3B6195;
+      border-radius: 4px;
+      padding: 0.5rem 1rem;
+      background-color: #3B6195;
+      color: rgb(255, 255, 255);
+      transition: background-color 0.5s;
+    }
+
+    main .btn:hover {
+      background-color: rgb(255, 255, 255);
+      color: #3B6195;
+      transition: background-color 0.5s;
+    }
+
+    .agenda-list .speaker {
+      display: inline-block;
+      padding-top: 0.325rem;
+      padding-bottom: 0.325rem;
+    }
+
+    .person-container {
+      display: inline-flex;
+      width: 30%;
+      flex-flow: row;
+      margin-bottom: 2rem;
+      min-width: 300px;
+    }
+
+    .person-image,
+    .participant-image {
+      display: block;
+      width: 100px;
+      height: 100px;
+      margin-right: 1.5rem;
+      background-color: gray;
+      border-radius: 50px;
+    }
+
+    .person-image img {
+      display: flex;
+      flex-flow: column;
+      align-content: center;
+    }
+
+    .person-info {
+      display: flex;
+      flex-flow: row;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .person-info * {
+      margin: 0.325rem 0;
+    }
+
+    .participant-title {
+      display: block;
+      margin-top: .625rem;
+      font-weight: 700;
+    }
+
+    .participant-container {
+      padding: 0 1.25rem 1.5rem;
+    }
+
+    .logo-list-items {
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: center;
+      margin-top: 3rem;
+      margin-bottom: 3rem;
+      text-align: center;
+    }
+
+    .logo-list-item {
+      padding: 1.5rem 0;
+      width: 100%;
+      min-width: 200px;
+    }
+
+    .logo-list-item img {
+      width: 100%;
+      max-width: 200px;
+    }
+
+    .main-footer {
+      background-color: rgba(173, 167, 164, 0.25);
+    }
+
+    .hero {
+      display: flex;
+      flex-flow: column;
+      justify-content: flex-end;
+      width: 100%;
+      height: 20vh;
+      min-height: 200px;
+      background-image: url("images/global/ccfws-hero.jpg");
+      background-color: #3B6195;
+      background-position: center -50px;
+      background-repeat: repeat-y;
+      background-size: cover;
+      transition: height 0.5s;
+    }
+
+    .hero-container {
+      width: 100%;
+      max-width: 1920px;
+      margin: 0 auto;
+      background-color: rgb(255, 255, 255);
+    }
+
+    .hero-container img {
+      width: 100%;
+    }
+
+    .hero-image {
+      padding-left: 10px;
+      padding-right: 30px;
+      width: 100%;
+      max-width: 690px;
+      transition: padding-left 0.5s;
+    }
+
+    .map {
+      max-width: 300px;
+    }
+
+    .star {
+      color: rgb(234, 148, 26) !important;
+    }
+
+    #participants .row {
+      margin-bottom: 0;
+    }
+
+    #participants .col {
+      vertical-align: top;
+    }
+
+    .col {
+      display: inline-block;
+    }
+
+    .col-xs-1 {
+      width: 100%;
+    }
+
+    .speaker-list {
+      margin-top: 1rem;
+      margin-left: 1rem;
+    }
+
+    .p-t-1 {
+      padding-top: 1rem;
+    }
+
+    d-block {
+      display: block;
+    }
+
+    .gallery-img-header {
+      font-size: 1rem;
+    }
+
+    .gallery-img-item {
+      display: inline-block;
+    }
+
+    .more-info {
+      display: none;
+      overflow: hidden;
+      margin: 0 1rem;
+      line-height: 1.5em;
+    }
+
+    .float-rt {
+      float: right;
+    }
+
+    .more-info-image {
+
+      padding: 2rem;
+      max-width: 425px;
+      width: 100%;
+    }
+
+    .more-info-icon {
+      display: inline;
+      height: 1.15rem;
+      fill: rgb(169, 5, 51);
+    }
+
+    .more-info-icon-link {
+      display: inline-block;
+      width: 1.15rem;
+      vertical-align: sub;
+    }
+
+    .more-info-icon:hover {
+      fill: #66a1c1;
+    }
+
+    .style-list-inline li {
+      display: inline-block;
+      width: 100%;
+      margin-bottom: 1rem;
+      padding-left: .25rem;
+      padding-right: .5rem;
+    }
+
+    .icon {
+      display: inline-block;
+      padding-right: .5rem;
+    }
+
+    .icon-img {
+      height: 1rem;
+      opacity: .5;
+    }
+
+    .icon:hover .icon-img {
+      opacity: 1;
+    }
+
+    @media screen and (min-width: 480px) {
+      .logo-list-item {
+        padding: 1.5rem;
+        width: 49%;
+      }
+
+      .agenda-list .col-1 {
+        text-align: right;
+      }
+
+      .hero {
+        min-height: 250px;
+        transition: min-height 0.5s;
+      }
+
+      .col-sm-2 {
+        width: 49%;
+      }
+
+      .style-list-inline li {
+        display: inline-block;
+        width: 49%;
+      }
+    }
+
+    @media screen and (min-width: 640px) {
+      .logo-list-item {
+        padding: 1.5rem;
+        width: 25%;
+      }
+
+      main {
+        padding: 0 40px 40px 40px;
+        transition: padding-left 0.5s;
+      }
+
+      .main-header,
+      .main-footer {
+        padding-left: 40px;
+        padding-right: 40px;
+        transition: padding-left 0.5s;
+      }
+
+      .hero {
+        min-height: 300px;
+        transition: min-height 0.5s;
+      }
+
+      .hero-image {
+        padding-left: 30px;
+        padding-right: 40px;
+      }
+    }
+
+    @media screen and (min-width: 768px) {
+      .col-md-3 {
+        width: 33%;
+      }
+    }
+
+    @media screen and (min-width: 960px) {
+      .hero {
+        height: 40vh;
+        transition: height 0.5s;
+        background-position: center bottom;
+        background-repeat: no-repeat;
+        background-position: center bottom;
+      }
+
+      .col-lg-4 {
+        width: 24%;
+      }
+
+      .style-list-inline li {
+        display: inline-block;
+        width: 33%;
+      }
+    }
+  </style>
+  <style type="text/css">
+    /* mobile menu */
+
+    .header .menu-icon {
+      cursor: pointer;
+      display: inline-block;
+      float: right;
+      padding: 18px 10px;
+      position: relative;
+      user-select: none;
+      margin-right: -10px;
+    }
+
+    .header .menu-icon .navicon {
+      background: rgb(255, 255, 255);
+      display: block;
+      height: 2px;
+      position: relative;
+      transition: background .2s ease-out;
+      width: 18px;
+    }
+
+    .header .menu-icon .navicon:before,
+    .header .menu-icon .navicon:after {
+      background: rgb(255, 255, 255);
+      content: '';
+      display: block;
+      height: 100%;
+      position: absolute;
+      transition: all .2s ease-out;
+      width: 100%;
+    }
+
+    .header .menu-icon .navicon:before {
+      top: 5px;
+    }
+
+    .header .menu-icon .navicon:after {
+      top: -5px;
+    }
+
+    /* menu btn */
+
+    .header .menu-btn {
+      display: none;
+    }
+
+    .header .menu {
+      display: none;
+      max-height: 0;
+    }
+
+    .header .menu-btn:checked~.menu {
+      display: block;
+      max-height: 240px;
+      position: absolute;
+      top: 37px;
+      left: 0;
+      right: 0;
+      padding: 10px 10px 20px 10px;
+      background-color: #000007;
+      box-shadow: 0px 0px 4px #333333;
+    }
+
+    .header .menu-btn:checked~.menu-icon .navicon {
+      background: transparent;
+    }
+
+    .header .menu-btn:checked~.menu-icon .navicon:before {
+      transform: rotate(-45deg);
+    }
+
+    .header .menu-btn:checked~.menu-icon .navicon:after {
+      transform: rotate(45deg);
+    }
+
+    .header .menu-btn:checked~.menu-icon:not(.steps) .navicon:before,
+    .header .menu-btn:checked~.menu-icon:not(.steps) .navicon:after {
+      top: 0;
+    }
+
+    @media (min-width: 840px) {
+      .header li {
+        float: left;
+      }
+
+      .header .menu {
+        display: block;
+        clear: none;
+        float: right;
+        max-height: none;
+      }
+
+      .header .menu-icon {
+        display: none;
+      }
+    }
+
+    .header .menu-icon .navicon:before {
+      top: 5px;
+    }
+
+    .header .menu-icon .navicon:after {
+      top: -5px;
+    }
+  </style>
+
+</head>
+
+<body>
+	<!-- CNS Banner -->
+<div class="wrapper">
+	<div class="container">
+		<header class="header main-header">
+			<span class="logo"><a href="#hero">HuBMAP Y3:Q1 Demo Day</a></span>
+			<nav>
+		          <input class="menu-btn" type="checkbox" id="menu-btn" />
+		          <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+		          <ul class="menu main-nav style-list-none m-a-0 p-a-0">
+		            <li><a href="#dates">Date</a></li>
+		            <li><a href="#goals">Goals</a></li>
+		            <li><a href="#participants">Participants</a></li>
+		            <li><a href="#locations">Location</a></li>
+		            <li><a href="#registration">Registration</a></li>
+		            <li><a href="#organizers">Organizers</a></li>
+		            <li><a href="#agenda">Agenda</a></li>
+                <li><a href="#speakers">Invited Speakers</a></li>
+		          </ul>
+        	</nav>
+		</header>
+		<div class="hero" id="hero">
+	        <div class="hero-container">
+	          <div class="hero-image">
+	            <!--<a href="https://hubmapconsortium.org" title="Link to HuBMAP Consortium" target="_blank"><img
+	                src="images/global/event-hero.png" class="img"></a>-->
+	          </div>
+	         </div>
+     	 </div>
+
+		<main>
+		<h1 style="margin-top: 20px;">HuBMAP Y3:Q1 Demo Day</h1>
+		<section class="" id="dates">
+		    <h2>Time &amp; Date</h2>		
+			<p>10:30am - 6:00pm EDT, September 21-22, 2020</p>
+		</section>
+		<section class="" id="goals">
+							<h2>Goals</h2>
+							<p>This meeting focused on cell segmentation, cell annotation, and nomenclature. We started with a retrospective of the 1st Portal Release and then planned Portal Releases for the coming two years.  
+									</p></section>
+		<section class="" id="participants">					
+							<h2> Participants</h2>
+              <br><img src="./images/people/hive_dd_group_pic-(1).gif" alt="Portrait: Hub Group">
+              
+							<p>All HuBMAP members (HIVE, TMCs, TTDs, RTIs, NIH, and external advisors) were invited to actively participate. Breakout session moderators covered technical and biomedical expertise. Invited talks were advertised to the larger scientific community, live feed was broadcast online, recorded and made available after the event.</p>
+		</section>
+		<section class="" id="locations">					
+					<h2>Location</h2>
+					<p>This was a virtual event hosted by MC-IU at Indiana University.  
+		          	</p>
+		</section>
+    <section class="" id="speakers">          
+              <h2>Invited Speakers</h2>
+              <br>
+
+               <div class="person-container">
+                      <div class="person-image-container"><img src="./images/people/alexander_diehl.png" alt="Portrait: Alexander Diehl" class="person-image"></div>
+                     <div class="person-info">
+                      <div>
+                        <h3>Alexander D. Diehl, Ph.D.</h3>
+                        <p><a href="http://medicine.buffalo.edu/faculty/profile.html?ubit=addiehl">Click for bio</a></p>
+                      </div>
+                    </div>
+                  </div>
+                          <div class="person-container">
+                      <div class="person-image-container"><img src="./images/people/amy_bernard.png" alt="Portrait: Amy Bernard" class="person-image"></div>
+                     <div class="person-info">
+                      <div>
+                        <h3>Amy Bernard, Ph.D.</h3>
+                        <p><a href="https://alleninstitute.org/about/team/staff-profiles/amy-bernard/">Click for bio</a></p>
+                      </div>
+                    </div>
+                  </div>
+    </section>
+		<section class="" id="organizers">					
+							<h2>Local Organizers from MC-IU Team</h2>
+							<p>
+								Members of the Cyberinfrastructure for Network Science Center (CNS) at the Luddy School of Informatics, Computing, and Engineering, Indiana University.
+							</p>
+
+							 <div class="person-container">
+            					<div class="person-image-container"><img src="./images/people/katyborner.png" alt="Portrait: Katy Börner" class="person-image"></div>
+           					 <div class="person-info">
+				              <div>
+				              	<h3>Katy Börner </h3>
+				                <p>Director, CI for Network Science Center (CNS)
+											</p>
+				              </div>
+				            </div>
+				          </div>
+                          <div class="person-container">
+            					<div class="person-image-container"><img src="./images/people/lisel_record.png" alt="Portrait: Lisel Record" class="person-image"></div>
+           					 <div class="person-info">
+				              <div>
+				              	<h3>Lisel Record</h3>
+                            <p>CNS Associate Director</p>
+				              </div>
+				            </div>
+				          </div>
+					  <div class="person-container">
+            					<div class="person-image-container"><img src="./images/people/matthew_martindale.png" alt="Portrait: Matthew Martindale" class="person-image"></div>
+           					 <div class="person-info">
+				              <div>
+				              	<h3>Matthew Martindale</h3>
+                                <p>CNS Center Assistant</p>
+				              </div>
+				            </div>
+				          </div>
+						
+						<div class="person-container">
+							<div class="person-image-container"><img src="./images/people/medina_sydykanova.png" alt="Portrait: Medina Sydykanova" class="person-image"></div>
+           					 <div class="person-info">
+				              <div>
+				              	<h3>Medina Sydykanova</h3>
+                                <p>CNS Project Support Specialist</p>
+				              </div>
+				            </div>
+				          </div>
+                  <div class="person-container">
+              <div class="person-image-container"><img src="./images/people/andreas_bueckle.jpg" alt="Portrait: Medina Sydykanova" class="person-image"></div>
+                     <div class="person-info">
+                      <div>
+                        <h3>Andreas Bueckle</h3>
+                                <p>PhD Candidate in Information Science, <br>CNS Research Assistant</p>
+                      </div>
+                    </div>
+                  </div>
+		</section>
+
+
+
+
+    
+
+		<section class="" id="agenda">
+          <h2>Agenda</h2>
+          <h4><i>All times were in Eastern Daylight Time (UTC-4)</i>
+
+					<br><p>
+						<h3 style="margin-top:20px;">September 21, 2020</h3>
+						<div style="margin-left:30px;"><br>The first day focused on a debrief of the 1st HuBMAP Portal release in the morning followed by a discussion and planning session for the 2nd HuBMAP Portal release including a longer-range discussion of portal features. Goals were to sketch out a tentative roadmap for the next 2+ years for data and code releases.</div>
+					<div style="margin-left:30px;"><table class="workshop">
+						<tr>
+							<td class="L">10:30am</td>
+							<td class="R">Welcome by Richard Conroy (NIH) and Katy Börner (IU) </td>
+						</tr>
+						
+						<tr>
+							<td class="L">10:45am</td>
+							<td class="R">Setting the Stage: Technical Retrospective and HIVE Y3 Plans 
+                          <ul style="margin-left: 40px;margin-top:3px;">
+                            <li>1st Portal Release Retrospective (what worked/did not work)</li>
+                            <li>Y3 key deliverables and planned collaborations</li>
+                            <ul style="margin-left: 18px;">
+                            <li>Jonathan Silverstein, IEC</li>
+                            <li>Ziv Bar- Joseph, TC-CMU</li>
+                            <li>Rahul Satija and Tommaso Biancalani, MC-NYGC</li>
+                            <li>Katy Börner, MC-IU</li>
+                            <li>Nils Gehlenborg, TC-HMS</li>  
+                            
+                          </ul>
+
+               </td>
+						</tr>
+						
+						<tr>
+							<td class="L">12:00pm</td>
+							<td class="R">Lunch Break / Posters and Videos 
+              <ul style="margin-left: 40px;margin-top:3px;">
+                            <li><b>Poster 1:</b> Building a chemical atlas of the human kidney with multimodal molecular imaging - Elizabeth Neumann (TMC)</li>
+                            <li><b>Poster 2:</b> R2UI: Stage 2 Registration User Interface for HuBMAP for Accurate Spatial Registration of Tissue Blocks and Associated Cells and Biomarkers Within 3D Organ Models - Ellen Quardokus (MC-IU), Andreas Bueckle (MC-IU) </li>
+                            <li><b>Poster 3:</b> Mapping of Voxel, Vector, and Meta Datasets - Elizabeth Record (MC-IU)</li>
+                            <li><b>Poster 4:</b> 3D Tissue Reconstruction and Segmentation In Support of CCF Design - Yousef Al-Kofahi (RTI-GE) & Yingnan Ju (MC-IU)</li>
+                            <li><b>Poster 5:</b> Starfish Spatial Transcriptomics Pipeline, Cecilia Cisar (TC-CMU)</li></ul>
+						</tr>
+						
+						<tr>
+							<td class="L">1:00pm</td>
+							<td class="R"><i>Breakout Session Introduction (Peter Kant)</i> <br>Breakout Session 1: Roadmap for Next 2 Years (A)
+                   <ul style="margin-left: 40px;margin-top:3px;">
+
+                            <li><b>1A:</b> Driving scientific questions - Richard Conroy (NIH), Mike Snyder (TMC-Stanford)</li>
+                            <li><b>1B:</b> New data and workflows - Matt Ruffalo (TC-CMU), Clive Wasserfall (TMC-UFL)</li>
+                            <li><b>1C:</b> Clinical and basic science metadata - Jonathan Silverstein (IEC), Mark Musen (MC-IU)</li>
+                            <li><b>1D:</b> Segmentation of cells and anatomical structures - Robert “Bob” Murphy (IEC), N. Heath Patterson (TMC-VU)</li>
+                    </ul>
+            </td>
+						</tr>
+						
+						<tr>
+							<td class="L">2:00pm</td>
+							<td class="R">Report Back</td>
+						</tr>
+						
+						<tr>
+							<td class="L">2:30pm</td>
+							<td class="R"><strong>Invited Speaker: Alexander D. Diehl, University of New York at Buffalo
+                            <br>The Cell Ontology and Its Role in Organizing High Dimensional Cell Type Data - <a href="https://www.youtube.com/watch?v=PxpDqhknsS8&list=PLuJUUASr8daMU_0VBri5rg-pbp2BZp6ZH&index=6">Video</a></strong> / <a href="https://drive.google.com/file/d/1BV2yLW86cWD4Q0oJn8Si7xVp4WCFlbaE/view?usp=sharing">Slides</a></strong>
+                            <br><i>The Cell Ontology (CL) is the designated OBO Foundry ontology for the representation of cell types. While it provides upper level classes for cell types found across all of biology, the curation of the CL in recent years has been focused on vertebrate and mammalian cell types, in particular, with ontology classes developed based primarily on results from human and model organism research. Experimentally-based details about particular cell types are captured in three ways in the CL:  by a descriptive term name or label, by a detailed text definition, and by logical axioms that relate a cell type class to characteristics that define that class in a necessary and sufficient matter, via logical relations to classes in outside ontologies. These axioms form the logical definition of a cell type class and capture specific details such as morphology, anatomical location, patterns of protein expression, or unique biological processes that a cell type may participate in. In recent years, the CL has proved useful in the analysis of complex biological data related to cell types. Systems have been developed that use CL logical definitions to classify flow cytometry and mass cytometry data to link cell populations identified via automated gating algorithms to cell type classes. Moreover, large scale gene expression studies such as the FANTOM 5 and ENCODE projects have used the CL to link patterns of gene expression to particular cell types and groups of cell types. And increasingly, the CL is being used as part of the analysis of scRNA seq data sets, to connect cell populations identified via clustering algorithms to known cell types and, in some cases, enable discovery of novel cell subtypes. In the HuBMAP project, the existing hierarchy and logical definitions in the CL, which in many cases include reference to anatomical locations, can be used as a means to organize cell type data taken from particular organs or tissues. The CL will prove valuable as part of tools for querying and analyses of data sets to search for differences and commonalities in gene and protein expression in similar cell types, such as epithelial cells, found in different organs.</i>
+                            
+            </td>
+						</tr>
+						<br>
+						<tr>
+							<td class="L">3:30pm</td>
+							<td class="R">Break / Posters and Videos 
+              <ul style="margin-left: 40px;margin-top:3px;">
+                            <li><b>Video 1:</b> EUI -Bruce W. Herr II (MC-IU)</li>
+                            <li><b>Video 2:</b> RUI - Andreas Bueckle (MC-IU)</li>
+                            <li><b>Video 3:</b> ASCT+B Visualizer - Paul Hrishikesh (MC-IU)</li></ul></td></tr>
+						
+						<tr>
+							<td class="L">4:30pm</td>
+							<td class="R">Breakout Session 2: Roadmap for Next 2 Years (B)
+                            <ul style="margin-left: 40px;margin-top:3px;">
+                              <li><b>2A:</b> Common coordinate framework ontologies & user interfaces - Bruce W. Herr II (MC-IU), Zorina Galis (NIH)</li>
+                              <li><b>2B:</b> Portal usability studies and UX (design process) optimization - Nils Gehlenborg (TC-HMS), Leonard Cross (MC-IU)</li>
+                              <li><b>2C:</b> HuBMAP APIs - Gloria Pryhuber (TMC-UCSD), Robert “Bob” Murphy (IEC)</li>
+                              <li><b>2D:</b> Building Resources to Support Portal Use - Robin Scibek (IEC), Danielle Gutierrez (TMC-VU)</li></ul>
+            </td>
+						</tr>
+						
+						<tr>
+							<td class="L">5:30pm</td>
+							<td class="R">Report Back</td>
+						</tr>
+
+						<tr>
+							<td class="L">6:00pm</td>
+							<td class="R">Adjourn</td>
+						</tr></table></div>
+
+            <p>
+						<h3>September 22, 2020</h3>
+						<div style="margin-left:30px;"><br>The second day featured discussions and hands-on sessions on 1) cell segmentation, 2) cell type annotation, 3) CCF, 4) outreach materials and also on HuBMAP superpowers and optimizing HIVE planning and coordination.
+					</p>
+					<table class="workshop">
+						<tr>
+							<td class="L">10:30am</td>
+							<td class="R"><strong>Invited Speaker: Amy Bernard, Allen Institute
+                            <br>Common Cell Type Nomenclature: Development and Application of a Systematic, Extensible Convention - <a href="https://www.youtube.com/watch?v=xhO_Qw5Tijg&list=PLuJUUASr8daMU_0VBri5rg-pbp2BZp6ZH&index=4">Video</a> / <a href="https://drive.google.com/file/d/10esnGIY0uyUcdnCezqxj1MFBlzPcbTug/view?usp=sharing">Slides</a></strong>
+                            <br><i>The recent advent of single cell RNA-sequencing and other high-throughput technologies has led to an explosion of cell type definitions across multiple organ systems. Consortia like the BRAIN Initiative Cell Census Network (BICCN), HuBMAP and the Human Cell Atlas (HCA) have begun to standardize and centralize the intake of data and associated metadata from these projects; however, the naming and organization of cell types has largely been left to individual investigators, resulting in widely varying nomenclature and limited alignment between taxonomies derived from overlapping datasets. To facilitate cross-dataset alignment and comparison, the Allen Institute created a common nomenclature convention for matching and tracking cell types across studies. The Common Cell type Nomenclature (CCN) is qualitatively similar to gene transcript management across different versions of GENCODE genome builds, allowing comparison of matched types with a defined reference or taxonomy. The CCN presents a framework that augments but does not change existing cell type names in existing publications and can be directly applied to data from new or established studies. The CCN was applied to diverse cell type datasets derived from mammalian brain generated by the Allen Institute, based on multiple quantifiable modalities. The CCN facilitates assigning accurate yet flexible cell type names in the mammalian cortex as a step towards community-wide efforts to organize multi-source, data-driven information related to cell type taxonomies from any organ system or organism.</i></td>
+						</tr>
+						
+						<tr>
+							<td class="L">11:30am</td>
+							<td class="R">Live demos of data, workflows, and tools that become available in Y3 
+                            <br><i>Register using poster/video registration form</i>
+                            <ul style="margin-left: 40px;margin-top:3px;">
+                            <li><b>Demo 1:</b> The Making of the Visible Human Massive Open Online Course - Engaging a Broader Audience in HuBMAP with the Power of Video - Andreas Bueckle (MC-IU)</li>
+                            <li><b>Demo 2:</b> HuBMAP Data Portal: UI + Visualization - Nils Gehlenborg (TC-HMS)</li>
+                            <li><b>Demo 3:</b> Lightsheet Microscopy - Seth Currlin (TMC-UFL)</li>
+                            <li><b>Demo 4:</b> HuBMAP Portal - Leonard Cross</li>
+                            <li><b>Demo 5:</b> Overview of ingest_validation_tools for TMCs - Chuck McCallum (TC-Harvard)</li></ul>
+            </tr>
+              </td>
+						</tr>
+						
+						<tr>
+							<td class="L">1:00pm</td>
+							<td class="R">Lunch Break</td>
+						</tr>
+						
+						<tr>
+							<td class="L">1:30pm</td>
+							<td class="R">Breakout Session 3: Unique HuBMAP Superpowers
+                <ul style="margin-left: 40px;margin-top:3px;">
+                  <li><b>3A:</b> Spatial and semantic data collection, registration, and integrating via common coordinate framework and 3D Atlas - Rahul Satija (MC-NYGC), Katy Börner (MC-IU)</li>
+                  <li><b>3B:</b> Diverse types of data and how it can be anchored / integrated and harmonized for analysis and visualization - Raf Van de Plas (TMC-VU), Joana Gonçalves (TMC)</li>
+                  <li><b>3C:</b> Segmenting, annotating, and visualizing multimodal data - Nils Gehlenborg (TC-HMS), Jeff Spraggins (TMC-VU)</li>
+                  <li><b>3D:</b> Interoperable FAIR (meta)data and open APIs - Bill Shirey (IEC), Ajay Pillai (NIH)</li>
+                </ul>
+              </td>
+
+						</tr>
+						
+						<tr>
+							<td class="L">2:30pm</td>
+							<td class="R">Report Back</td>
+						</tr>
+						
+						<tr>
+							<td class="L">3:00pm</td>
+							<td class="R">Breakout Session 4: Optimizing Planning & Coordination
+                <ul style="margin-left: 40px;margin-top:3px;">
+                    <li><b>4A:</b> Within HIVE - Peter Kant (IEC), Tyler Best (NIH)</li>
+                    <li><b>4B:</b> Within HuBMAP - Aaron Horning (TMC-Stanford), Richard “Rich” LeDuc (RTI-NW)</li>
+                    <li><b>4C:</b> Working With the NIH Data Ecosystem - Haluk Resat (NIH), Sanjay Jain (TMC-UCSD)</li>
+                    <li><b>4D:</b> HuBMAP External - Nicholas “Nick” Nystrom (IEC), Sarah Teichmann (TC-CMU)</li>
+                  </ul>
+              </td>
+						</tr>
+						
+						<tr>
+							<td class="L">4:00pm</td>
+							<td class="R">Report Back</td>
+						</tr>
+						
+						<tr>
+							<td class="L">4:30pm</td>
+							<td class="R">Closing words</td>
+					
+						</tr>
+          <tr>
+              <td class="L">4:45pm</td>
+              <td class="R">PI Meeting, NIH is welcome to attend.</td>
+          
+            </tr>
+
+          <tr>
+              <td class="L">5:45pm</td>
+              <td class="R">Adjourn</td>
+          
+            </tr></table></div>
+		</section>
+    <section class="" id="goals">
+              <h2>Links to Posters and Videos</h2>
+              <h4><br><td class="R">Posters:
+                <ul style="margin-left: 40px;margin-top:3px;">
+                <li>Starfish Spatial Transcriptomics Pipeline, Cecilia Cisar (TC-CMU) - <a href="https://drive.google.com/file/d/1IDY9H5DjHaWhsREO_30RdEKm2EGZdBeC/view?usp=sharing">Poster</a></li>
+                <li>Mapping of Voxel, Vector, and Meta Datasets - Katy Borner (MC-IU) - <a href="https://drive.google.com/file/d/1EUylUy1kbsKQEvCCGWw_6Tkx173MUr4r/view?usp=sharing">Poster</a></li></ul></td>
+                
+                <td class="R">Videos:
+                <ul style="margin-left: 40px;margin-top:3px;">
+                <li>EUI -Bruce W. Herr II (MC-IU) - <a href="https://www.youtube.com/watch?v=DDmP_7vDy-o&list=PLuJUUASr8daMU_0VBri5rg-pbp2BZp6ZH&index=1">Video</a></li>
+                <li>RUI - Andreas Bueckle (MC-IU) - <a href="https://www.youtube.com/watch?v=Lc8hnK1JOWI&list=PLuJUUASr8daMU_0VBri5rg-pbp2BZp6ZH&index=2">Video</a></li>
+                <li>ASCT+B Visualizer - Paul Hrishikesh (MC-IU) - <a href="https://www.youtube.com/watch?v=drpaitiR47M&list=PLuJUUASr8daMU_0VBri5rg-pbp2BZp6ZH&index=3">Video</a></li></td></p></h4></ul>
+    </section>
+    
+		<section class="" id="agenda">
+					<h2>Social Media</h2>
+					<p><h4>HuBMAP twitter feed: @_hubmap
+					<br>Hashtag: #HuBMAP</h4></p>
+		</section>
+
+		<section class="" id="agenda">
+					<h2>Acknowledgements</h2>
+					<p><h4>Event organization is funded by NIH Award <a href="https://projectreporter.nih.gov/project_info_description.cfm?aid=9687220">OT2OD026671</a> and the <a href="https://commonfund.nih.gov/">NIH Common Fund</a>.
+          <br>Special thanks go to <a href="http://universityevents.iu.edu/"> IU EventPro Team </a> for supporting this event.</h4>
+		</section></p>
+    <section>
+			<h2 style="margin-bottom: 5px;"><b><a href="https://hubmapconsortium.org/contact-form/">Contact Us</b></h2></a>
+      <p><h4><strong>Matthew Martindale</strong>
+        <br/>Cyberinfrastructure for Network Science (CNS) Center Assistant
+        <br/>Indiana University Luddy School of Informatics, Computing, and Engineering
+        <br/>812-855-9930
+        <br/><a href="mailto:masmarti@iu.edu">masmarti@iu.edu</a></p>
+      </p>
+						<br><h5>© 2020 All Rights Reserved</h4>
+		</section>
+
+
+
+
+</b></h3></div></section>		</div>
+	</div>
+</div>
+
+
+
+
+
+	
+
+	<!-- Load needed resources such as JS, CSS, etc. Need to done twice based on GRAIL recommendation -->
+	
+</body>
+</html>
+
